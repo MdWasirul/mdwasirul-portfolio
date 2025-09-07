@@ -5,8 +5,8 @@ export const PROJECTS = [
         description:
             "My personal portfolio showcasing projects, skills, and experience, built with React and Tailwind.",
         tech: ["React", "Tailwind"],
-        link: "#",
-        github: "#",
+        link: "https://mdwasirul-portfolio.vercel.app/",
+        github: "https://github.com/MdWasirul/mdwasirul-portfolio",
     },
     {
         id: 2,
@@ -14,8 +14,8 @@ export const PROJECTS = [
         description:
             "A Netflix-inspired app built with React that lets users browse movies and shows using TMDB API.",
         tech: ["React", "TMDB API", "Tailwind"],
-        link: "#",
-        github: "#",
+        link: "https://netflix-gpt-basic.vercel.app/",
+        github: "https://github.com/MdWasirul/netflix-gpt",
     },
     {
         id: 3,
@@ -23,8 +23,8 @@ export const PROJECTS = [
         description:
             "A real-time weather app that fetches live weather data using APIs with a clean and minimal UI.",
         tech: ["JavaScript", "API", "CSS"],
-        link: "#",
-        github: "https://google.com",
+        link: "https://mdwasirul.github.io/weatherApi/",
+        github: "https://github.com/MdWasirul/weatherApi",
     },
 
     {
@@ -34,7 +34,7 @@ export const PROJECTS = [
             "A YouTube-like video platform with search, playback, and recommendations built using React.",
         tech: ["React", "YouTube API", "Tailwind"],
         link: "#",
-        github: "#",
+        github: "https://github.com/MdWasirul/YOUTUBE_CLONE",
     },
 
 ];

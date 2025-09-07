@@ -44,7 +44,7 @@ const Footer = () => {
         {/* Right - Social Icons */}
         <div className="flex space-x-5 text-gray-700 text-2xl">
           <a
-            href="https://github.com/MdWasirul"
+            href="https://github.com/MdWasirul/mdwasirul-portfolio"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-900 transition"
