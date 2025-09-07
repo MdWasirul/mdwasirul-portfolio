@@ -3,7 +3,7 @@ import React from "react";
 const ProjectCard = ({ project }) => {
   const { tech, title, description, link, github } = project;
   return (
-    <div className="relative group bg-purple-100 rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 overflow-hidden border border-gray-200">
+    <div className="relative group bg-gray-200 rounded-xl  transition duration-500 overflow-hidden border border-gray-200">
       <div className="p-8">
         <h3 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition duration-500">
           {title}

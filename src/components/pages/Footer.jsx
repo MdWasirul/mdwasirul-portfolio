@@ -3,37 +3,48 @@ import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-indigo-200 py-6 mt-12">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-        {/* Left - Name / Copyright */}
-        <p className="text-gray-700 text-sm md:text-base">
-          © {new Date().getFullYear()}{" "}
-          <span className="font-semibold">MD Wasirul</span>. All rights
-          reserved.
-        </p>
-
-        {/* Middle - Navigation Links */}
-        <div className="flex space-x-6 text-gray-700 font-medium">
-          <a href="#about" className="hover:text-blue-600 transition">
+    <footer className="bg-gray-200 py-10 ">
+      <div className=" px-8 space-y-2 flex flex-col md:flex-row items-center justify-between md:space-y-0">
+        <div>
+          <p className="text-sm md:text-base">
+            &copy;{currentYear}{" "}
+            <span className="font-semibold text-blue-600">Md Wasirul</span> All
+            rights reserved.
+          </p>
+        </div>
+        <div className="flex space-x-6 font-medium">
+          <Link
+            to="/about"
+            className="hover:text-blue-600 transition duration-300"
+          >
             About
-          </a>
-          <Link to="/about">ABout</Link>
-          <a href="#skills" className="hover:text-blue-600 transition">
+          </Link>
+          <Link
+            to="/skills"
+            className="hover:text-blue-600 transition duration-300"
+          >
             Skills
-          </a>
-          <a href="#projects" className="hover:text-blue-600 transition">
+          </Link>
+          <Link
+            to="/projects"
+            className="hover:text-blue-600 transition duration-300"
+          >
             Projects
-          </a>
-          <a href="#contact" className="hover:text-blue-600 transition">
+          </Link>
+          <Link
+            to="/contact"
+            className="hover:text-blue-600 transition duration-300"
+          >
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Right - Social Icons */}
-        <div className="flex space-x-5 text-gray-700 text-xl">
+        <div className="flex space-x-5 text-gray-700 text-2xl">
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/MdWasirul"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-900 transition"
@@ -41,7 +52,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href="https://www.linkedin.com/in/md-wasirul-ab8a96271/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-700 transition"
@@ -49,15 +60,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://twitter.com/yourtwitter"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-500 transition"
-          >
-            <FaTwitter />
-          </a>
-          <a
-            href="mailto:yourmail@gmail.com"
+            href="mailto:techbymdwasirul2024@gmail.com"
             className="hover:text-red-500 transition"
           >
             <MdEmail />

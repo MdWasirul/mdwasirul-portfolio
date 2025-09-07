@@ -28,7 +28,10 @@ const skills = [
     name: "Github",
     icon: "/icons/github.svg",
   },
-
+  {
+    name: "Node JS",
+    icon: "/icons/nodejs.svg",
+  },
   {
     name: "Sql",
     icon: "/icons/sql.svg",
