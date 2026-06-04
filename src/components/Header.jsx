@@ -1,50 +1,69 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
-  const navlink = [
-    {
-      label: "Home",
-      link: "/",
-    },
-    {
-      label: "About",
-      link: "/about",
-    },
+  const [isOpen, setIsOpen] = useState(false);
 
-    {
-      label: "Skills",
-      link: "/skills",
-    },
-    {
-      label: "Project",
-      link: "/projects",
-    },
-    {
-      label: "Contact us",
-      link: "/contact",
-    },
+  const navLinks = [
+    { label: "Home", link: "/" },
+    { label: "About", link: "/about" },
+    { label: "Skills", link: "/skills" },
+    { label: "Projects", link: "/projects" },
+    { label: "Contact", link: "/contact" },
   ];
+
   return (
-    <header className="bg-indigo-800 py-4 px-6 flex justify-between items-center sticky top-0 left-0 z-50">
-      <div>
-        <h2 className="font-bold text-3xl ml-8 text-white">
-          <span className="text-yellow-300">Wasirul's</span> Portfolio
+    <header className="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        {/* Logo */}
+        <h2 className="font-bold text-2xl md:text-3xl text-white">
+          <span className="text-cyan-400">Wasirul's</span> Portfolio
         </h2>
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:block">
+          <ul className="flex items-center gap-8">
+            {navLinks.map((item) => (
+              <li key={item.label}>
+                <Link
+                  to={item.link}
+                  className="text-slate-300 hover:text-cyan-400 transition-colors duration-300"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
-      <nav className="text-white">
-        <ul className="flex flex-col md:flex-row ">
-          {navlink.map((navItem, i) => (
-            <li key={i} className="px-5  text-lg ">
-              <Link
-                to={navItem.link}
-                className="hover:underline decoration-3 decoration-pink-300 underline-offset-8"
-              >
-                {navItem.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <nav className="md:hidden bg-slate-900 border-t border-slate-800">
+          <ul className="flex flex-col py-4">
+            {navLinks.map((item) => (
+              <li key={item.label}>
+                <Link
+                  to={item.link}
+                  className="block px-6 py-3 text-slate-300 hover:bg-slate-800 hover:text-cyan-400 transition"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };

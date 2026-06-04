@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-gray-200 py-10 ">
+    <footer className="bg-gray-300 py-10 ">
       <div className=" px-8 space-y-2 flex flex-col md:flex-row items-center justify-between md:space-y-0">
         <div>
           <p className="text-sm md:text-base">

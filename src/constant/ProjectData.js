@@ -1,6 +1,24 @@
 export const PROJECTS = [
+
     {
         id: 1,
+        title: "Hotel Booking Platform",
+        description:
+            "Developed a scalable full-stack hotel booking platform with advanced search and filtering capabilities, secure JWT-based authentication, and responsive UI. Implemented RESTful APIs, CRUD operations, and MongoDB integration to deliver a seamless booking experience.",
+        tech: [
+            "React.js",
+            "TypeScript",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Tailwind CSS",
+            "JWT Authentication"
+        ],
+        link: "https://mern-booking-app-2h7t.onrender.com/",
+        github: "https://github.com/MdWasirul/mern-booking-app",
+    },
+    {
+        id: 2,
         title: "Portfolio Website",
         description:
             "My personal portfolio showcasing projects, skills, and experience, built with React and Tailwind.",
@@ -9,7 +27,7 @@ export const PROJECTS = [
         github: "https://github.com/MdWasirul/mdwasirul-portfolio",
     },
     {
-        id: 2,
+        id: 3,
         title: "Netflix GPT",
         description:
             "A Netflix-inspired app built with React that lets users browse movies and shows using TMDB API.",
@@ -18,7 +36,7 @@ export const PROJECTS = [
         github: "https://github.com/MdWasirul/netflix-gpt",
     },
     {
-        id: 3,
+        id: 4,
         title: "Weather App",
         description:
             "A real-time weather app that fetches live weather data using APIs with a clean and minimal UI.",
@@ -28,7 +46,7 @@ export const PROJECTS = [
     },
 
     {
-        id: 4,
+        id: 5,
         title: "YouTube App",
         description:
             "A YouTube-like video platform with search, playback, and recommendations built using React.",

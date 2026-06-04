@@ -7,10 +7,17 @@ const About = () => {
         <h2 className="text-4xl font-bold text-center text-gray-700">
           About Me
         </h2>
-        <p className="text-xl font-semibold text-center text-gray-600">
-          I'm an aspiring <span className="text-pink-600 font-semibold">Frontend Developer</span> specializing in <span className="text-purple-600 font-semibold">React.js</span>. 
-          I love creating clean, responsive, and user-friendly web applications 
-          while continuously improving my skills in JavaScript, HTML, CSS, and modern tools.
+        <p className="text-xl font-semibold text-center text-gray-600 leading-8">
+          I'm a passionate{" "}
+          <span className="text-pink-600">Full-Stack Developer</span> and
+          final-year BCA student with experience building modern web
+          applications using <span className="text-purple-600">React.js</span>,{" "}
+          <span className="text-blue-600">Next.js</span>,{" "}
+          <span className="text-green-600">Node.js</span>, and{" "}
+          <span className="text-emerald-600">MongoDB</span>. I enjoy creating
+          responsive user interfaces, developing secure APIs, and transforming
+          ideas into scalable digital solutions while continuously improving my
+          technical and problem-solving skills.
         </p>
       </div>
     </section>

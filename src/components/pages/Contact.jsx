@@ -27,7 +27,7 @@ const Contact = () => {
               >
                 <MdEmail className="text-blue-500 text-2xl group-hover:text-blue-700 transition" />
                 <span className="group-hover:underline">
-                  techbymdwasirul2024@gmail.com
+                  mdwasirul.dev@gmail.com
                 </span>
               </a>
 
