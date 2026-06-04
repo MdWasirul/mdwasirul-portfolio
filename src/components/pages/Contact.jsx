@@ -41,7 +41,7 @@ const Contact = () => {
 
               <div className="flex items-center space-x-3">
                 <MdLocationOn className="text-blue-500 text-2xl hover:text-blue-700 transition" />
-                <span>Madhapur, Hyderabad, India</span>
+                <span>Hyderabad, India</span>
               </div>
             </div>
           </div>

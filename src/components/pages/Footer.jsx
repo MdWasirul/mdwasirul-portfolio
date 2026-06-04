@@ -60,7 +60,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:techbymdwasirul2024@gmail.com"
+            href="mailto:mdwasirul.dev@gmail.com"
             className="hover:text-red-500 transition"
           >
             <MdEmail />
