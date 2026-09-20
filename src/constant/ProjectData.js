@@ -47,7 +47,7 @@ export const PROJECTS = [
 
     {
         id: 5,
-        title: "YouTube App",
+        title: "NextTube",
         description:
             "A YouTube-like video platform with search, playback, and recommendations built using React.",
         tech: ["React", "YouTube API", "Tailwind"],

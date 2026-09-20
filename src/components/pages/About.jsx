@@ -9,9 +9,10 @@ const About = () => {
         </h2>
         <p className="text-xl font-semibold text-center text-gray-600 leading-8">
           I'm a passionate{" "}
-          <span className="text-pink-600">Full-Stack Developer</span> and
-          final-year BCA student with experience building modern web
-          applications using <span className="text-purple-600">React.js</span>,{" "}
+          <span className="text-pink-600">Full-Stack Developer</span> and{" "}
+          <span className="text-gray-800">BCA graduate</span> with experience
+          building modern web applications using{" "}
+          <span className="text-purple-600">React.js</span>,{" "}
           <span className="text-blue-600">Next.js</span>,{" "}
           <span className="text-green-600">Node.js</span>, and{" "}
           <span className="text-emerald-600">MongoDB</span>. I enjoy creating

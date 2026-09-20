@@ -38,11 +38,11 @@ const Hero = () => {
             Full-Stack Developer focused on building modern, scalable web
             applications. Skilled in React.js, Next.js, Node.js, TypeScript, and
             MongoDB, I enjoy turning ideas into responsive, user-friendly
-            digital experiences. As a final-year BCA student graduating in 2026,
+            digital experiences. As a{" "}
+            <span className="font-semibold text-slate-800">BCA graduate</span>,
             I'm eager to contribute to innovative teams and impactful software
             projects.
           </p>
-
           {/* Buttons with enhanced hover effects */}
           <div className="flex space-x-4 ">
             <a
