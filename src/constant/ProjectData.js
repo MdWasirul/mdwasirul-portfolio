@@ -54,5 +54,14 @@ export const PROJECTS = [
         link: "#",
         github: "https://github.com/MdWasirul/YOUTUBE_CLONE",
     },
+    {
+        id: 6,
+        title: "Lost and Found Management System",
+        description:
+            "A web application enabling users to report, search, and claim lost or found items with image uploads and contact verification.",
+        tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+        link: "https://lost-found-gules-alpha.vercel.app/",
+        github: "https://github.com/MdWasirul/lost-and-found",
+    },
 
 ];
